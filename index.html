@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Password Generator - Code With Mahdi</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet" />
+</head>
+
+<body>
+
+
+  <div class="maincontainer w-screen min-h-screen bg-[#f7f7f7] flex flex-col items-center justify-center">
+
+    <div class="container p-[20px] w-[30vw] h-[auto] bg-white rounded-lg shadow-lg flex flex-col">
+      <h1
+        class="text-2xl relative after:absolute after:content-[''] after:w-[150px] after:h-[3.5px] after:bg-blue-500 after:bottom-[-5px] after:left-0 after:rounded-m">
+        Password Generator</h1>
+      <div class="password-container flex flex-col mt-[10px]">
+        <input type="text" placeholder="Enter a Password Length."
+        id="pwdLen"
+          class="w-full p-[10px] outline-1 border-[1px] border-gray-300 rounded-lg mt-[10px] focus:outline-blue-500">
+      </div>
+      
+
+      <div class="w-full flex items-center p-[10px] border-[1px] border-gray-300 rounded-lg mt-[10px]">
+        <p id="pwd" class="m-0 p-0 flex-1">Your Password Here..</p>
+        <i class="ri-file-copy-fill text-blue-500 text-[20px] cursor-pointer" id="copyBtn"></i>
+      </div>
+
+      <button id="genBtn" class="w-full p-[10px] text-white bg-blue-500 rounded-lg border-0 cursor-pointer hover:bg-blue-600 mt-[10px]"><i class="ri-bard-fill"></i> Generate New Password</button>
+    </div>
+
+  </div>
+
+
+  <script src="script.js"></script>
+</body>
+
+</html>
